@@ -48,7 +48,11 @@ do
   vim.o.number = true
   -- You can also add relative line numbers, to help with jumping.
   --  Experiment for yourself to see if you like it!
-  -- vim.o.relativenumber = true
+  vim.o.relativenumber = true
+
+  -- Wrap text at 80 columns
+  --  See `:help 'textwidth'`
+  vim.o.textwidth = 80
 
   -- Enable mouse mode, can be useful for resizing splits for example!
   vim.o.mouse = 'a'
@@ -426,6 +430,16 @@ do
 
   -- ... and there is more!
   --  Check out: https://github.com/nvim-mini/mini.nvim
+
+  --  Markdown render plugin
+  -- init.lua
+  vim.pack.add({
+    "https://github.com/MeanderingProgrammer/render-markdown.nvim",
+    "https://github.com/nvim-tree/nvim-web-devicons", -- optional: icons for code block languages
+  })
+
+  require("render-markdown").setup({})
+
 end
 
 -- ============================================================
