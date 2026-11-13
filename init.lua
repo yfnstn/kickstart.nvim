@@ -54,6 +54,10 @@ do
   --  See `:help 'textwidth'`
   vim.o.textwidth = 80
 
+  -- Show a vertical guide line at the wrap limit
+  --  See `:help 'colorcolumn'`
+  vim.o.colorcolumn = '80'
+
   -- Enable mouse mode, can be useful for resizing splits for example!
   vim.o.mouse = 'a'
 
