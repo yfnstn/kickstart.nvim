@@ -50,13 +50,17 @@ do
   --  Experiment for yourself to see if you like it!
   vim.o.relativenumber = true
 
-  -- Wrap text at 80 columns
+  -- Wrap text at 120 columns
   --  See `:help 'textwidth'`
-  vim.o.textwidth = 80
+  vim.o.textwidth = 120
 
   -- Show a vertical guide line at the wrap limit
   --  See `:help 'colorcolumn'`
-  vim.o.colorcolumn = '80'
+  vim.o.colorcolumn = '120'
+
+  -- When long lines wrap visually, break at word boundaries instead of mid-word
+  --  See `:help 'linebreak'`
+  vim.o.linebreak = true
 
   -- Enable mouse mode, can be useful for resizing splits for example!
   vim.o.mouse = 'a'
